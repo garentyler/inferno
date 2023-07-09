@@ -1,7 +1,6 @@
 .DS_Store
+._*
 target
 /*.log
 /logs
-/world
-/server-icon.png
-/composition.toml
+/inferno.toml
