@@ -38,7 +38,7 @@ impl Default for Config {
     fn default() -> Self {
         Config {
             port: 3000,
-            server_version: inferno_protocol::util::get_version("server"),
+            server_version: crate::get_version("server"),
         }
     }
 }
