@@ -1,0 +1,11 @@
+services:
+  client-web:
+    build:
+      target: prod
+    volumes: !reset []
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+      target: prod
+    volumes: !reset []

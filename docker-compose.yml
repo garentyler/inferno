@@ -3,7 +3,8 @@ services:
     restart: unless-stopped
     build:
       context: ./clients/web/
-      dockerfile: dev.Dockerfile
+      dockerfile: Dockerfile
+      target: dev
     ports:
       - "3000:3000"
     volumes:
@@ -13,7 +14,8 @@ services:
     restart: unless-stopped
     build:
       context: ./server/
-      dockerfile: dev.Dockerfile
+      dockerfile: Dockerfile
+      target: dev
     ports:
       - "3001:3001"
     volumes:
