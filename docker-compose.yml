@@ -1,0 +1,11 @@
+services:
+  server:
+    restart: unless-stopped
+    build:
+      context: ./server/
+      dockerfile: dev.Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./server:/app
+      - .git:/app/.git
