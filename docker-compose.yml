@@ -1,4 +1,14 @@
 services:
+  client-web:
+    restart: unless-stopped
+    build:
+      context: ./clients/web/
+      dockerfile: dev.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./clients/web:/app
+      - /app/node_modules
   server:
     restart: unless-stopped
     build:
