@@ -5,7 +5,7 @@ version = "0.1.0"
 authors = ["Garen Tyler <garentyler@garen.dev>"]
 repository = "https://github.com/garentyler/inferno"
 readme = "README.md"
-license = "GPL"
+license = "AGPL-3.0"
 edition = "2021"
 
 [[bin]]
